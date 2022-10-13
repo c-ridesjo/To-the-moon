@@ -4,16 +4,16 @@
     display: table;
 }
 
-.full-page {
+.astronaut {    /* rutan med text */
     min-height: 100vh;
     outline: 3px solid orange;
 }
 
-.brown {
+.space-ventures {
     outline: 3px solid brown;
 }
 
-.grey {
+.quote {
     outline: 3px solid gray;
 }
 
@@ -60,19 +60,19 @@ blockquote {
     display: none;
 }
 
-.purple {
+.ground-control {
     outline: 3px solid purple;
 }
 
-.yellow {
+.yellow {    /* and I'm floating*/
     outline: 3px solid yellow;
 }
 
-.red {
+.red {      /*dolt citat i mobilläge */
     outline: 3px solid red;
 }
 
-.blue {
+.blue {    /*text kring roterad bild */
     outline: 3px solid blue;
 }
 
@@ -80,14 +80,13 @@ blockquote {
     display: none;
 }
 
-@media screen and (mini-width: 1024 px) {
+@media screen and (mini-width: 1024 px) {   /* desktop-läge*/
     .full-page {
         display: flex;
         gap: 100px;
     }
 
-    .brown,
-    .grey {
+    .space-ventures, .quote {
         width: 50%;
     }
 
@@ -118,7 +117,7 @@ blockquote {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: transparent;
 }
 
 * {
@@ -155,10 +154,18 @@ button span: nth-child(2) {
 }
 
 body {
+    background-image: url("images/adam-miller-dBaz0xhCkPY-unsplash.jpg") alt "Astronaut";
+    background-attachment: fixed;
+    Background-size: cover; 
+    Background-position: center;
+    Height: 100vh;
     padding-top: 20px;
 }
 
-html {
-    background-image: url("images/adam-miller-dBaz0xhCkPY-unsplash.jpg") alt "Astronaut";
-    background-attachment: fixed;
-}
+
+  /*  display: flex;
+    flex-direction: table;
+
+main {
+    <section class="
+}  */
