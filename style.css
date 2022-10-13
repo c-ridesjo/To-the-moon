@@ -1,3 +1,9 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .full-page {
     min-height: 100vh;
     outline: 3px solid orange;
@@ -18,6 +24,7 @@
             position: relative;
             z-index: 1;
         }
+
         span:nth-of-type(2) {
             position: relative;
             top: -20px;
@@ -32,19 +39,29 @@ blockquote {
     padding: 0;
     margin: 20px;
     position: relative;
-    &::before, &::after {
+    display: inline;
+
+    &::before,
+    &::after {
         content: "";
         display: block;
         position: absolute;
+        font-size: 3rem;
     }
+
     &::before {
         top: -3px;
         left: -3 px;
     }
+
     &::after {
         bottom: -3px;
         right: -3px;
     }
+}
+
+.gradient-quote {
+    display: none;
 }
 
 .purple {
@@ -63,12 +80,51 @@ blockquote {
     outline: 3px solid blue;
 }
 
+.major-tom {
+    display: none;
+}
+
 @media screen and (mini-width: 1024 px) {
     .full-page {
         display: flex;
         gap: 100px;
     }
-    .brown, .grey {
+
+    .brown,
+    .grey {
         width: 50%;
     }
+
+    gradient-quote {
+        display: block;
+        background: #CF5FA6;
+        background: radial-gradient(circle farthest-corner at center center, #CF5FA6 0%, #8C3165 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .major-tom {
+        display: block;
+        width: 100px;
+        height: auto;
+        float: right;
+        transform: rotate 3deg;
+    }
 }
+
+    .nav {
+        outline: 1px solid brown;
+        text-align: right;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: white;
+    }
+
+    body {
+        padding-top: 20px;
+    }
