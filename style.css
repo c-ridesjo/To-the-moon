@@ -90,7 +90,7 @@ blockquote {
         width: 50%;
     }
 
-    gradient-quote {
+    .gradient-quote {
         display: block;
         background: #CF5FA6;
         background: radial-gradient(circle farthest-corner at center center, #CF5FA6 0%, #8C3165 100%);
