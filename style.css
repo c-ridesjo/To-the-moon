@@ -1,0 +1,74 @@
+.full-page {
+    min-height: 100vh;
+    outline: 3px solid orange;
+}
+
+.brown {
+    outline: 3px solid brown;
+}
+
+.grey {
+    outline: 3px solid gray;
+}
+
+.space-ventures {
+    h2 {
+        span:first-of-type {
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+        span:nth-of-type(2) {
+            position: relative;
+            top: -20px;
+            left: 10px;
+            color: green;
+            z-index: 0;
+        }
+    }
+}
+
+blockquote {
+    padding: 0;
+    margin: 20px;
+    position: relative;
+    &::before, &::after {
+        content: "";
+        display: block;
+        position: absolute;
+    }
+    &::before {
+        top: -3px;
+        left: -3 px;
+    }
+    &::after {
+        bottom: -3px;
+        right: -3px;
+    }
+}
+
+.purple {
+    outline: 3px solid purple;
+}
+
+.yellow {
+    outline: 3px solid yellow;
+}
+
+.red {
+    outline: 3px solid red;
+}
+
+.blue {
+    outline: 3px solid blue;
+}
+
+@media screen and (mini-width: 1024 px) {
+    .full-page {
+        display: flex;
+        gap: 100px;
+    }
+    .brown, .grey {
+        width: 50%;
+    }
+}
