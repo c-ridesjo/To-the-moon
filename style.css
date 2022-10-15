@@ -17,19 +17,17 @@ body {
 .astronaut {
     /* rutan med text */
     background-image: url("images/adam-miller-dBaz0xhCkPY-unsplash.jpg") alt "Astronaut";
-    min-height: 100vh;
+    height: 100vh;
     background-size: cover;
     width: 100%;
-    height: auto;
     background-repeat: no-repeat;
 }
 
 .space-ventures {
     background-image: url("images/raphael-nogueira-svbDI1Pq30s-unsplash.jpg") alt "Stars";
-    min-height: 100vh;
+    height: 100vh;
     background-size: cover;
     width: 100%;
-    height: auto;   
     background-repeat: no-repeat;
 }
 
@@ -214,7 +212,7 @@ input:checked+.menu button span:nth-child(2) {
 }
 
 input:checked+.menu button span:nth-child(1) {
-    transform: rotate 45deg;
+    transform: rotate(45deg);
 }
 
 input:checked+.menu button span:nth-child(3) {
