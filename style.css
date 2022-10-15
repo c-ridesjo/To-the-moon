@@ -4,7 +4,8 @@
     display: table;
 }
 
-.astronaut {    /* rutan med text */
+.astronaut {
+    /* rutan med text */
     min-height: 100vh;
     outline: 3px solid orange;
 }
@@ -40,16 +41,20 @@ blockquote {
     margin: 20px;
     position: relative;
     display: inline;
-    &::before, &::after {
+
+    &::before,
+    &::after {
         content: "";
         display: block;
         position: absolute;
         font-size: 3rem;
     }
+
     &::before {
         top: -3px;
         left: -3 px;
     }
+
     &::after {
         bottom: -3px;
         right: -3px;
@@ -64,15 +69,18 @@ blockquote {
     outline: 3px solid purple;
 }
 
-.yellow {    /* and I'm floating*/
+.yellow {
+    /* and I'm floating*/
     outline: 3px solid yellow;
 }
 
-.red {      /*dolt citat i mobilläge */
+.red {
+    /*dolt citat i mobilläge */
     outline: 3px solid red;
 }
 
-.blue {    /*text kring roterad bild */
+.blue {
+    /*text kring roterad bild */
     outline: 3px solid blue;
 }
 
@@ -80,13 +88,16 @@ blockquote {
     display: none;
 }
 
-@media screen and (mini-width: 1024 px) {   /* desktop-läge*/
+@media screen and (mini-width: 1024 px) {
+
+    /* desktop-läge*/
     .full-page {
         display: flex;
         gap: 100px;
     }
 
-    .space-ventures, .quote {
+    .space-ventures,
+    .quote {
         width: 50%;
     }
 
@@ -111,13 +122,32 @@ blockquote {
 }
 
 .nav {
-    outline: 1px solid brown;
-    text-align: right;
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
-    background-color: transparent;
+    background-color: rgba(72, 64, 179, 0.5);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0,3s cubic-bezier(0.075, 0.82, 0.165, 1)
+    visibility: hidden;
+}
+
+input: checked + .menu nav {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 * {
@@ -129,16 +159,36 @@ button {
     height: 35px;
     background-color: transparent;
     border: 0;
-    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  /*  cursor: pointer; */
 }
 
-span {
+button span {
     background-color: black;
     width: 100%;
     height: 4px;
     display: block;
     margin-bottom: 3px;
     border-radius: 2px;
+}
+
+input:checked+.menu button span {
+    position: absolute;
+    transition: all0, 3 s ease-in-out;
+}
+
+input:checked+.menu button span:nth-child(2) {
+    opacity: 0;
+}
+
+input:checked+.menu button span:nth-child(1) {
+    transform: rotate 45deg;
+}
+
+input:checked+.menu button span:nth-child(3) {
+    transform: rotate(-45deg);
 }
 
 button: hover span:nth-child(2) {
@@ -150,20 +200,20 @@ button span: nth-child(2) {
     background-color: red;
     left: -6px;
     position: relative;
-    transition: left 0,3s ease-in-out;
+    transition: left 0, 3s ease-in-out;
 }
 
 body {
     background-image: url("images/adam-miller-dBaz0xhCkPY-unsplash.jpg") alt "Astronaut";
     background-attachment: fixed;
-    Background-size: cover; 
+    Background-size: cover;
     Background-position: center;
     Height: 100vh;
     padding-top: 20px;
 }
 
 
-  /*  display: flex;
+/*  display: flex;
     flex-direction: table;
 
 main {
