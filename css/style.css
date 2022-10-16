@@ -14,29 +14,37 @@ body {
     font-size: 14px; 
 }
 
+/*.menu {
+    outline: 1px solid brown;
+    text-align: right; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white; 
+}*/
+
 .astronaut {
-    background-image: url("../images/adam-miller-dBaz0xhCkPY-unsplash.jpg") alt "Astronaut";
-    height: 100vh;
+    background-image: url("../images/adam-miller-dBaz0xhCkPY-unsplash.jpg");
+    min-height: 100vh;
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
 }
 
 .space-ventures {
-    background-image: url("../images/raphael-nogueira-svbDI1Pq30s-unsplash.jpg") alt "Stars";
-    height: 100vh;
+    background-image: url("../images/raphael-nogueira-svbDI1Pq30s-unsplash.jpg");
+    min-height: 100vh;
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
-    position: absolute;
-    background-position: center;
 }
 
 .quote {
     display: inline-table;
     outline: 3px solid rgb(109, 9, 83);
     font-style: rubic;
-    font-size: 16;
+    font-size: 16px;
 }
 
 .space-ventures h2 span:first-of-type {
@@ -200,7 +208,7 @@ input {
 
 input:checked+.menu button span {
     position: absolute;
-    transition: all0, 3 s ease-in-out;
+    transition: all 0,3s ease-in-out;
 }
 
 input:checked+.menu button span:nth-child(2) {
