@@ -10,19 +10,16 @@ body {
     Background-position: center;
     Height: 100vh;
     padding-top: 20px;
-    font-family: arial;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px; 
 }
 
 .astronaut {
-    background-color: rgb(30, 95, 30);
     background-image: url("../images/adam-miller-dBaz0xhCkPY-unsplash.jpg") alt "Astronaut";
-    /*height: 100vh;*/
+    height: 100vh;
     background-size: cover;
-    /*width: 100%;*/
+    width: 100%;
     background-repeat: no-repeat;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 .space-ventures {
@@ -31,11 +28,13 @@ body {
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
+    position: absolute;
+    background-position: center;
 }
 
 .quote {
     display: inline-table;
-    outline: 3px solid rgb(238, 129, 209);
+    outline: 3px solid rgb(109, 9, 83);
     font-style: rubic;
     font-size: 16;
 }
@@ -87,17 +86,7 @@ blockquote {
     outline: 3px solid purple;
 }
 
-.yellow {
-    /* and I'm floating*/
-    outline: 3px solid yellow;
-}
-
-.red {
-    /*dolt citat i mobilläge */
-    outline: 3px solid red;
-}
-
-.blue {
+.content-clearfix {
     /*text kring roterad bild */
     outline: 3px solid blue;
 }
@@ -128,6 +117,7 @@ blockquote {
         font-weight: bold;
         font-size: 3rem;
         text-align: center;
+        outline: 3px solid red;
     }
 
     .major-tom {
@@ -152,7 +142,6 @@ blockquote {
 }
 
 input: checked+.menu nav {
-    display: block;
     opacity: 1;
     visibility: visible;
 }
@@ -192,6 +181,10 @@ button span {
     display: block;
     margin-bottom: 3px;
     border-radius: 2px;
+    position: relative;
+    left: 0;
+    transition: left 0,3s ease-in-out;
+    margin-left: 6px;
 }
 
 input {
@@ -202,6 +195,7 @@ input {
     width: 35px;
     height: 35px;
     opacity: 0;
+    cursor: pointer;
 }
 
 input:checked+.menu button span {
@@ -211,6 +205,7 @@ input:checked+.menu button span {
 
 input:checked+.menu button span:nth-child(2) {
     opacity: 0;
+    left: 6px;
 }
 
 input:checked+.menu button span:nth-child(1) {
@@ -223,19 +218,11 @@ input:checked+.menu button span:nth-child(3) {
 
 button: hover span:nth-child(2) {
     background-color: red;
-    left: 0;
+    left: 6px;
 }
 
 button span: nth-child(2) {
-    background-color: red;
-    left: -6px;
+    margin left: -0;
     position: relative;
-    transition: left 0, 3s ease-in-out;
+    transition: all 0,4s ease-in-out;
 }
-
-/*  display: flex;
-    flex-direction: table;
-
-main {
-    <section class="
-}  */
