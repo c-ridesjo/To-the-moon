@@ -4,6 +4,8 @@
     display: table;
 }
 
+@import 'layout/mobile';
+
 body {
     margin: 0;
     Background-size: cover;
@@ -24,7 +26,7 @@ aside {
     font-family: rubik, sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     text-align: center;
     padding: 10px;
 }
@@ -59,9 +61,8 @@ aside {
 
 .quote {
     display: inline-table;
-    outline: 3px solid rgb(109, 9, 83);
-    font-style: rubik; 
-    font-size: 16px;
+    font-style: italic; 
+    font-size: 20px;
 }
 
 .space-ventures h2 span:first-of-type {
@@ -108,7 +109,6 @@ blockquote {
 }
 
 .ground-control {
-    outline: 3px solid purple;
 }
 
 .content-clearfix {
@@ -121,7 +121,7 @@ blockquote {
 }
 
 @media screen and (mini-width: 1024px) {
-
+    @import 'layout/desktop';
     /* desktop-läge*/
     .full-page {
         display: flex;
@@ -230,7 +230,7 @@ input:hover+.menu button span:nth-child(2) {
     width: 100vw;
     height: 100vh;
     opacity: 0;
-    transition: all 0, 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0,3s cubic-bezier(0.075, 0.82, 0.165, 1);
     visibility: hidden;
 }
 
