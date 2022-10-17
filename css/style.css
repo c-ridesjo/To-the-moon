@@ -4,8 +4,6 @@
     display: table;
 }
 
-@import 'layout/mobile';
-
 body {
     margin: 0;
     Background-size: cover;
@@ -69,14 +67,20 @@ aside {
     display: block;
     position: relative;
     z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 40px;
 }
 
 .space-ventures h2 span:nth-of-type(2) {
+    display: block;
     position: relative;
     top: -20px;
     left: 10px;
-    color: green;
+    color: grey;
     z-index: 0;
+    text-align: center;
+    font-size: 40px;
 }
 
 blockquote {
@@ -109,7 +113,14 @@ blockquote {
 }
 
 .ground-control {
-}
+/*    display: block;
+    position: relative;
+    z-index: 1;
+    color: black;
+    text-align: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;*/
+    }
 
 .content-clearfix {
     /*text kring roterad bild */
@@ -121,7 +132,7 @@ blockquote {
 }
 
 @media screen and (mini-width: 1024px) {
-    @import 'layout/desktop';
+
     /* desktop-läge*/
     .full-page {
         display: flex;
@@ -159,7 +170,7 @@ blockquote {
 }
 
 button {
-    width: 35px;
+    width: 100px;
     height: 35px;
     background-color: transparent;
     border: 0;
@@ -173,7 +184,7 @@ button {
 
 button span {
     display: block;
-    width: 25%;
+    width: 35%;
     height: 3px;
     background-color: black;
     margin-bottom: 6px;
@@ -230,7 +241,7 @@ input:hover+.menu button span:nth-child(2) {
     width: 100vw;
     height: 100vh;
     opacity: 0;
-    transition: all 0,3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0, 3s cubic-bezier(0.075, 0.82, 0.165, 1);
     visibility: hidden;
 }
 
@@ -248,4 +259,5 @@ ul {
     height: 100%;
     justify-content: space-evenly;
     text-align: center;
+    position: relative;
 }
