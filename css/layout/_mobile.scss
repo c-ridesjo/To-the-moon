@@ -1,4 +1,4 @@
-body {
+body {                                  /* mobil-läge*/
     margin: 0;
     Background-size: cover;
     Background-position: center;
@@ -8,7 +8,7 @@ body {
     font-size: 14px;
 }
 
-aside {
+aside {                                 /* Rutan To the moon*/
     max-width: 40vw;
     margin-top: 65px;
     margin-left: 50px;
@@ -22,14 +22,16 @@ aside {
     padding: 10px;
 }
 
-footer {
+footer {                                /*sidfot*/
     font-family: 'Rubik', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: #510435;
     background-color: rgb(39, 39, 92);
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.astronaut {
+.astronaut {                            /*bakgrundsbild sid 1*/
     background-image: url("../images/adam-miller-dBaz0xhCkPY-unsplash-small.jpg");
     min-height: 100vh;
     background-size: cover;
@@ -38,16 +40,17 @@ footer {
     background-position: 10% 30%;
 }
 
-.space-ventures {
+.left {         /*stjärnbakgrund sid 2*/
     background-image: url("../images/raphael-nogueira-svbDI1Pq30s-unsplash-small.jpg");
     min-height: 100vh;
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
+    color: white;
     
 }
 
-.quote {
+.quote {            /*citat sid 2*/
     display: inline-table;
     font-style: italic; 
     font-size: 20px;
@@ -102,11 +105,11 @@ blockquote {
     }
 }
 
-.gradient-quote {
+.gradient-quote {                   /*citat som inte visas i mobilvyn*/
     display: none;
 }
 
-.ground-control {
+.ground-control {                   /*text vänster sid 2 */
     display: block;
     position: relative;
     z-index: 1;
@@ -114,10 +117,18 @@ blockquote {
     text-align: absolute;
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
+    color: white;
     }
 
 .content-clearfix {
     /*text kring roterad bild */
+    display: block;
+    position: relative;
+    z-index: 1;
+    text-align: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: white;
     outline: 3px solid blue;
 }
 
@@ -125,99 +136,3 @@ blockquote {
     display: none;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-button {
-    width: 100px;
-    height: 35px;
-    background-color: transparent;
-    border: 0;
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    z-index: 2;
-    pointer-events: none;
-}
-
-
-button span {
-    display: block;
-    width: 35%;
-    height: 3px;
-    background-color: black;
-    margin-bottom: 6px;
-    border-radius: 4px;
-    position: relative;
-    left: 0;
-    transition: left 0, 3s ease-in-out;
-    margin-left: 6px;
-}
-
-input {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1;
-    width: 35px;
-    height: 35px;
-    opacity: 0;
-    cursor: pointer;
-}
-
-input:checked+.menu button span {
-    position: absolute;
-    transition: all 0, 3s ease-in-out;
-}
-
-input:checked+.menu button span:nth-child(2) {
-    opacity: 0;
-    left: 6px;
-}
-
-input:checked+.menu button span:nth-child(1) {
-    transform: rotate(45deg);
-}
-
-input:checked+.menu button span:nth-child(3) {
-    transform: rotate(-45deg);
-}
-
-button span:nth-child(2) {
-    margin-left: 0;
-    transition: all 0, 4s ease-in-out;
-}
-
-input:hover+.menu button span:nth-child(2) {
-    left: 6px;
-}
-
-.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(72, 64, 179, 0.5);
-    width: 100vw;
-    height: 100vh;
-    opacity: 0;
-    transition: all 0, 3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    visibility: hidden;
-}
-
-input:checked+.menu nav {
-    opacity: 1;
-    visibility: visible;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-evenly;
-    text-align: center;
-    position: relative;
-}

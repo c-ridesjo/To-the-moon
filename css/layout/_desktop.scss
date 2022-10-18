@@ -1,17 +1,20 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {                 /* desktop-läge*/
 
-    /* desktop-läge*/
-    .full-page {
+        .full-page {
         display: flex;
         gap: 100px;
     }
 
-    .space-ventures,
-    .quote {
+    .left,
+    .quote {                                            /*vänster sida + citat*/
         width: 50%;
     }
 
-    .gradient-quote {
+
+    .right {
+        width: 50%;
+    }
+    .gradient-quote {                                   /*citat höger sida*/                           
         display: block;
         background: #CF5FA6;
         background: radial-gradient(circle farthest-corner at center center, #CF5FA6 0%, #8C3165 100%);
@@ -21,10 +24,13 @@
         font-weight: bold;
         font-size: 3rem;
         text-align: center;
-        outline: 3px solid red;
+        color: white;
+   
     }
 
-    .major-tom {
+
+
+    .major-tom {                       /* roterat foto samt text höger sida*/
         display: block;
         width: 50px;
         height: auto;
