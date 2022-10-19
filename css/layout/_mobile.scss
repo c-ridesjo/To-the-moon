@@ -27,7 +27,6 @@ aside {                                 /* Rutan To the moon*/
 }
 
 footer {                                /*sidfot*/
-    font-family: 'Rubik', sans-serif;
     font-size: 12px;
     text-decoration: #510435;
     background-color: rgb(39, 39, 92);
@@ -55,9 +54,9 @@ footer {                                /*sidfot*/
     color: white;
 }
 
-.quote {                              /*citat sid 2*/
+.quote {                              /*float-citat sid 2*/
     display: inline-table;
-    font-style: italic; 
+    font-style: italic;
     font-size: 20px;
 }
 
@@ -85,7 +84,7 @@ footer {                                /*sidfot*/
     font-weight: 800;
 }
 
-blockquote {                /*float-citat*/
+blockquote {                    /* position float-citat*/
     padding: 0;
     margin: 20px;
     position: relative;
@@ -120,7 +119,6 @@ blockquote {                /*float-citat*/
     z-index: 1;
     color: black;
     text-align: absolute;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
     color: white;
     }

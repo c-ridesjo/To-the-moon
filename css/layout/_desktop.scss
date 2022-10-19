@@ -10,6 +10,7 @@
 
     .left, .right {         /*text vä + hö sida*/
         width: 50%;
+        padding: 80px;
     }
 
 
@@ -27,20 +28,20 @@
         position: relative;
         z-index: 1;
         text-align: absolute;
-        font-family: 'Times New Roman', Times, serif;
+    
         font-size: 14px;
         color: white;
     }
     .gradient-quote {               /*stort citat höger sida*/                                               
         display: block;
-       
-        background: radial-gradient(circle farthest-corner at center center, #CF5FA6 0%, #8C3165 100%);
+            
+        background: radial-gradient(circle farthest-corner at center center, #f79dd6 0%, #8C3165 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    
+        font-style: italic;
         font-weight: bold;
-        font-size: 3rem;
-        text-align: center;  
+        font-size: 28px;
+        text-align: left;  
         color: white;
     }
 
