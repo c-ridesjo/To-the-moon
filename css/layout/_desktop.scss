@@ -32,6 +32,18 @@
         font-size: 14px;
         color: white;
     }
+
+    a:visited {                     /*länk höger sida*/
+       color: rgb(225, 53, 125);
+  }
+  
+  a:hover {                         /*hover-effekt länk*/
+    color: rgb(11, 203, 46);
+  }
+  
+
+                                   
+    
     .gradient-quote {               /*stort citat höger sida*/                                               
         display: block;
             
