@@ -1,40 +1,54 @@
-@media screen and (min-width: 1024px) {                 /* desktop-läge*/
-
-        .full-page {
+@media screen and (min-width: 1024px) {        /* desktop-läge*/
+    .full-page {
         display: flex;
         gap: 100px;
     }
 
-    .left,
-    .quote {                                            /*vänster sida + citat*/
+    .section-2 {
+        display: flex;
+    }
+
+    .left, .right {         /*text vä + hö sida*/
         width: 50%;
     }
 
 
-    .right {
-        width: 50%;
-    }
-    .gradient-quote {                                   /*citat höger sida*/                           
+    /*.right                         text höger sida + stort citat + foto
+    .gradient-quote,
+    .major-tom {
+        width: 100%;
+    }   
+    */ 
+    
+ 
+
+    .content clearfix {              /*text kring roterat foto höger sida*/
         display: block;
-        background: #CF5FA6;
+        position: relative;
+        z-index: 1;
+        text-align: absolute;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 14px;
+        color: white;
+    }
+    .gradient-quote {               /*stort citat höger sida*/                                               
+        display: block;
+       
         background: radial-gradient(circle farthest-corner at center center, #CF5FA6 0%, #8C3165 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-clip: border-box;
+    
         font-weight: bold;
         font-size: 3rem;
-        text-align: center;
+        text-align: center;  
         color: white;
-   
     }
 
-
-
-    .major-tom {                       /* roterat foto samt text höger sida*/
+    .major-tom {                     /* roterat foto*/
         display: block;
-        width: 50px;
+        width: 100px;
         height: auto;
         float: right;
-        transform: rotate 3deg;
+        transform: rotate (3deg);
     }
 }

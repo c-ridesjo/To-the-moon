@@ -1,3 +1,7 @@
+.full-page {
+    min-height: 100vh;
+}
+
 body {                                  /* mobil-läge*/
     margin: 0;
     Background-size: cover;
@@ -40,23 +44,24 @@ footer {                                /*sidfot*/
     background-position: 10% 30%;
 }
 
-.left {         /*stjärnbakgrund sid 2*/
+
+
+.section-2 {                                  /*stjärnbakgrund sid 2*/
     background-image: url("../images/raphael-nogueira-svbDI1Pq30s-unsplash-small.jpg");
     min-height: 100vh;
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
     color: white;
-    
 }
 
-.quote {            /*citat sid 2*/
+.quote {                              /*citat sid 2*/
     display: inline-table;
     font-style: italic; 
     font-size: 20px;
 }
 
-.space-ventures h2 span:first-of-type {
+.space-ventures h2 span:first-of-type {     /*rubrik Space sid 2*/
     display: block;
     position: relative;
     z-index: 1;
@@ -67,7 +72,7 @@ footer {                                /*sidfot*/
     font-weight: 800;
 }
 
-.space-ventures h2 span:nth-of-type(2) {
+.space-ventures h2 span:nth-of-type(2) {    /*rubrik Ventures sid 2*/
     display: block;
     position: relative;
     top: -40px;
@@ -80,7 +85,7 @@ footer {                                /*sidfot*/
     font-weight: 800;
 }
 
-blockquote {
+blockquote {                /*float-citat*/
     padding: 0;
     margin: 20px;
     position: relative;
@@ -105,7 +110,7 @@ blockquote {
     }
 }
 
-.gradient-quote {                   /*citat som inte visas i mobilvyn*/
+.gradient-quote {                   /*stort citat som inte visas i mobilvyn*/
     display: none;
 }
 
@@ -120,19 +125,7 @@ blockquote {
     color: white;
     }
 
-.content-clearfix {
-    /*text kring roterad bild */
-    display: block;
-    position: relative;
-    z-index: 1;
-    text-align: absolute;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
-    color: white;
-    outline: 3px solid blue;
-}
-
-.major-tom {
+.major-tom {                   /*foto som inte visas i mobilvyn*/
     display: none;
 }
 
