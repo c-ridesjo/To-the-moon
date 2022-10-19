@@ -2,7 +2,8 @@
     min-height: 100vh;
 }
 
-body {                                  /* mobil-läge*/
+body {
+    /* mobil-läge*/
     margin: 0;
     Background-size: cover;
     Background-position: center;
@@ -12,21 +13,35 @@ body {                                  /* mobil-läge*/
     font-size: 14px;
 }
 
-aside {                                 /* Rutan To the moon*/
-    max-width: 40vw;
-    margin-top: 65px;
-    margin-left: 50px;
+a:link {
+    /*länkar*/
+    color: rgb(225, 53, 125);
+}
+
+a:hover {
+    /*hover-effekt länkar*/
+    color: rgb(11, 203, 46);
+}
+
+aside {
+    /* Rutan To the moon*/
+    max-width: 35vw;
+    margin-top: 30px;
+    margin-left: 30px;
     border: 4px solid black;
     background-color: rgb(255, 255, 255);
     position: absolute;
     font-weight: 500;
-    font-size: 1.5rem;
-    text-transform: uppercase; 
+    font-size: 20px;
+    text-transform: uppercase;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 
-footer {                                /*sidfot*/
+
+
+footer {
+    /*sidfot*/
     font-size: 12px;
     text-decoration: #510435;
     background-color: rgb(39, 39, 92);
@@ -34,7 +49,8 @@ footer {                                /*sidfot*/
     padding-bottom: 15px;
 }
 
-.astronaut {                            /*bakgrundsbild sid 1*/
+.astronaut {
+    /*bakgrundsbild sid 1*/
     background-image: url("../images/adam-miller-dBaz0xhCkPY-unsplash-small.jpg");
     min-height: 100vh;
     background-size: cover;
@@ -45,7 +61,8 @@ footer {                                /*sidfot*/
 
 
 
-.section-2 {                                  /*stjärnbakgrund sid 2*/
+.section-2 {
+    /*stjärnbakgrund sid 2*/
     background-image: url("../images/raphael-nogueira-svbDI1Pq30s-unsplash-small.jpg");
     min-height: 100vh;
     background-size: cover;
@@ -54,13 +71,15 @@ footer {                                /*sidfot*/
     color: white;
 }
 
-.quote {                              /*float-citat sid 2*/
+.quote {
+    /*float-citat sid 2*/
     display: inline-table;
     font-style: italic;
     font-size: 20px;
 }
 
-.space-ventures h2 span:first-of-type {     /*rubrik Space sid 2*/
+.space-ventures h2 span:first-of-type {
+    /*rubrik Space sid 2*/
     display: block;
     position: relative;
     z-index: 1;
@@ -71,7 +90,8 @@ footer {                                /*sidfot*/
     font-weight: 800;
 }
 
-.space-ventures h2 span:nth-of-type(2) {    /*rubrik Ventures sid 2*/
+.space-ventures h2 span:nth-of-type(2) {
+    /*rubrik Ventures sid 2*/
     display: block;
     position: relative;
     top: -40px;
@@ -84,7 +104,8 @@ footer {                                /*sidfot*/
     font-weight: 800;
 }
 
-blockquote {                    /* position float-citat*/
+blockquote {
+    /* position float-citat*/
     padding: 0;
     margin: 20px;
     position: relative;
@@ -109,11 +130,13 @@ blockquote {                    /* position float-citat*/
     }
 }
 
-.gradient-quote {                   /*stort citat som inte visas i mobilvyn*/
+.gradient-quote {
+    /*stort citat som inte visas i mobilvyn*/
     display: none;
 }
 
-.ground-control {                   /*text vänster sid 2 */
+.ground-control {
+    /*text vänster sid 2 */
     display: block;
     position: relative;
     z-index: 1;
@@ -123,7 +146,7 @@ blockquote {                    /* position float-citat*/
     color: white;
 }
 
-.major-tom {                   /*foto som inte visas i mobilvyn*/
+.major-tom {
+    /*foto som inte visas i mobilvyn*/
     display: none;
 }
-
