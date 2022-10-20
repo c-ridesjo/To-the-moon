@@ -15,10 +15,11 @@ body {
 
 h2 {
     margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 h3 {
-    font-family: Rubik, sans-serif;
     font-weight: bold;
 }
 
@@ -86,7 +87,7 @@ footer {
 
 .section-2 {
     /*stjärnbakgrund sid 2*/
-    background-image: url("../images/raphael-nogueira-svbDI1Pq30s-unsplash-small.jpg");
+    background-image: url("../images/raphael-nogueira-svbDI1Pq30s-unsplash-small-dark.jpg");
     min-height: 100vh;
     background-size: cover;
     width: 100%;
@@ -152,8 +153,10 @@ blockquote {
     display: block;
     position: relative;
     top: -40px;
-    left: 40px;
-    color: grey;
+    left: 40px;  
+    background: radial-gradient(circle farthest-corner at center center, #565455 0%, rgb(255, 255, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     z-index: 0;
     text-align: center;
     font-size: 60px;
@@ -174,7 +177,6 @@ blockquote {
     color: black;
     text-align: absolute;
     color: white;
-    font-family: Rubik, sans-serif;
     font-size: 12px;  
 }
 
