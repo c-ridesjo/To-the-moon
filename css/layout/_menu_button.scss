@@ -28,7 +28,8 @@ button span {
     margin-left: 6px;
 }
 
-input {             /*knappen*/
+input {
+    /*knappen*/
     position: fixed;
     top: 20px;
     right: 20px;
@@ -66,7 +67,7 @@ button span:nth-child(2) {
 }
 
 nav {
-    position: fixed; 
+    position: fixed;
     width: 100vw;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.8);

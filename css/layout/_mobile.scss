@@ -47,7 +47,7 @@ aside {
     text-align: center;
     padding: 5px;
 }
-  
+
 footer {
     /*sidfot*/
     font-size: 12px;
@@ -79,11 +79,11 @@ footer {
     border: solid white;
     border-width: 0 6px 6px 0;
     display: inline-block;
-    padding: 10px; 
+    padding: 10px;
     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);    
-  }
-  
+    -webkit-transform: rotate(45deg);
+}
+
 
 .section-2 {
     /*stjärnbakgrund sid 2*/
@@ -95,6 +95,7 @@ footer {
     color: white;
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 40px;
 }
 
 .quote {
@@ -107,34 +108,35 @@ footer {
 }
 
 blockquote {
-      margin: 10px;
-      position: relative;
-      display: inline;
-      left: 50px;
-      font-style: italic;
-      line-height: 20px;
-    }
+    margin: 10px;
+    position: relative;
+    display: inline;
+    left: 50px;
+    font-style: italic;
+    line-height: 20px;
+}
 
-    blockquote::before, blockquote::after {
-      display: block;
-      position: absolute;
-      font-size: 3rem;
-      font-family: Georgia, 'Times   New Roman', Times, serif;
-      opacity: 30%;
-    }
+blockquote::before,
+blockquote::after {
+    display: block;
+    position: absolute;
+    font-size: 3rem;
+    font-family: Georgia, 'Times   New Roman', Times, serif;
+    opacity: 30%;
+}
 
-    blockquote::before {
-      content: open-quote;
-      top: 10px;
-      left: -22px;
-    }
+blockquote::before {
+    content: open-quote;
+    top: 10px;
+    left: -22px;
+}
 
-    blockquote::after {
-      content: close-quote;
-      bottom: 20px;
-      right: 260px;
-    }
-    
+blockquote::after {
+    content: close-quote;
+    bottom: 20px;
+    right: 260px;
+}
+
 .space-ventures h2 span:first-of-type {
     /*rubrik Space sid 2*/
     display: block;
@@ -153,7 +155,7 @@ blockquote {
     display: block;
     position: relative;
     top: -40px;
-    left: 40px;  
+    left: 40px;
     background: radial-gradient(circle farthest-corner at center center, #565455 0%, rgb(255, 255, 255) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -177,7 +179,7 @@ blockquote {
     color: black;
     text-align: absolute;
     color: white;
-    font-size: 12px;  
+    font-size: 12px;
 }
 
 
