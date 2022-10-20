@@ -5,12 +5,18 @@
 body {
     /* mobil-läge*/
     margin: 0;
-    Background-size: cover;
-    Background-position: center;
-    Height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     padding-top: 20px;
-    Font-family: Rubik, sans-serif;
-    font-size: 14px;
+    font-family: Rubik, sans-serif;
+    font-size: 12px;
+}
+
+h3 {
+    font-family: Rubik, sans-serif;
+    font-weight: bold;
 }
 
 a:link {
@@ -82,6 +88,7 @@ footer {
     /*rubrik Space sid 2*/
     display: block;
     position: relative;
+    right: 40px;
     z-index: 1;
     color: white;
     text-align: center;
@@ -95,7 +102,7 @@ footer {
     display: block;
     position: relative;
     top: -40px;
-    left: 10px;
+    left: 40px;
     color: grey;
     z-index: 0;
     text-align: center;
@@ -136,14 +143,16 @@ blockquote {
 }
 
 .ground-control {
-    /*text vänster sid 2 */
+    /*ground-control-stycket vänster sid 2 */
     display: block;
+  
     position: relative;
     z-index: 1;
     color: black;
     text-align: absolute;
-    font-size: 14px;
     color: white;
+    font-family: Rubik, sans-serif;
+    font-size: 12px;
 }
 
 .major-tom {
