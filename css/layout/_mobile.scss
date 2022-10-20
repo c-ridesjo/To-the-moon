@@ -52,8 +52,8 @@ footer {
     font-size: 12px;
     text-decoration: #510435;
     background-color: rgb(39, 39, 92);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .astronaut {
@@ -92,6 +92,8 @@ footer {
     width: 100%;
     background-repeat: no-repeat;
     color: white;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .quote {
@@ -99,6 +101,8 @@ footer {
     display: inline-table;
     font-style: italic;
     font-size: 20px;
+    position: center;
+    padding-bottom: 30px;
 }
 
 blockquote {
@@ -121,12 +125,12 @@ blockquote {
     blockquote::before {
       content: open-quote;
       top: 10px;
-      left: -20px;
+      left: -22px;
     }
 
     blockquote::after {
       content: close-quote;
-      bottom: -10px;
+      bottom: 20px;
       right: 260px;
     }
     
@@ -171,8 +175,10 @@ blockquote {
     text-align: absolute;
     color: white;
     font-family: Rubik, sans-serif;
-    font-size: 12px;
+    font-size: 12px;  
 }
+
+
 
 .major-tom {
     /*foto som inte visas i mobilvyn*/
