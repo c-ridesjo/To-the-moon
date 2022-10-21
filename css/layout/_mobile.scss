@@ -20,17 +20,18 @@ h2 {
 }
 
 h3 {
+    font-size: 18px;
     font-weight: bold;
 }
 
 a:link {
     /*länkar*/
-    color: rgb(225, 53, 125);
+    color: black;
 }
 
 a:hover {
     /*hover-effekt länkar*/
-    color: rgb(11, 203, 46);
+    color: rgb(212, 16, 121);
 }
 
 aside {
@@ -51,7 +52,8 @@ aside {
 footer {
     /*sidfot*/
     font-size: 12px;
-    text-decoration: #510435;
+    color: #ea0c98;
+    text-shadow: 2px 2px 5px rgb(237, 144, 201);
     background-color: rgb(39, 39, 92);
     padding-top: 5px;
     padding-bottom: 5px;
@@ -181,8 +183,6 @@ blockquote::after {
     color: white;
     font-size: 12px;
 }
-
-
 
 .major-tom {
     /*foto som inte visas i mobilvyn*/
