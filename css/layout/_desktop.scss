@@ -23,11 +23,22 @@
         position: relative;
         z-index: 1;
         text-align: absolute;
-
         font-size: 14px;
         color: white;
     }
 
+    .clearfix {
+        overflow: auto;
+      }
+
+      .major-tom {
+        /* roterat foto*/
+        display: block;
+        width: 100px;
+        height: auto;
+        float: right;
+        transform: rotate (3deg);
+    }
     .gradient-quote {
         /*stort citat höger sida*/
         display: block;
@@ -39,14 +50,5 @@
         font-size: 28px;
         text-align: left;
         color: white;
-    }
-
-    .major-tom {
-        /* roterat foto*/
-        display: block;
-        width: 100px;
-        height: auto;
-        float: right;
-        transform: rotate (3deg);
     }
 }
