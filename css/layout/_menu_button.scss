@@ -98,3 +98,16 @@ ul {
     font-weight: bolder;
    
 }
+
+.fancy_link {
+    background-image: linear-gradient(rgb(203, 18, 132));
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease;
+}
+
+.fancy_link:hover {
+    background-size: 100% 3px;
+}
+
