@@ -26,23 +26,18 @@ h3 {
 }
 
 a:link {
-    /*länkar*/
+/*länkar*/
     color: rgb(181, 9, 141);
-    text-decoration: none;   
-    
+    text-decoration: none; 
+}  
+        
 a:visited { 
     text-decoration: none;
- }
+}
+        
 a:active { 
     text-decoration: none; 
-}
-
-}
-
-/*a:hover {
-    /*hover-effekt länkar
-    color:rgb(203, 18, 132);
-} */
+ }
 
 aside {
     /* Rutan To the moon*/
@@ -56,7 +51,8 @@ aside {
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
-    padding: 5px;
+    padding: 20px;
+    padding-top: 10px;
 }
 
 footer {
@@ -99,36 +95,12 @@ footer {
 .arrow-move span {
     position: relative;
     left: 0;
-    transition: left 0.3s ease-in-out;
+    transition: left 0.4s ease-in-out;
   }
   
   .arrow-move:hover span {
     left: 15px;
   }
-
-/*.arrow_right {
-    display: block;
-    margin: 30px auto;
-    width: 25px;
-    height: 25px;
-    border-top: 2px solid rgb(169, 8, 94);
-    border-left: 2px solid rgb(169, 8, 94);
-    transform: rotate(135deg);
-}
-
-.arrow_right::after {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 45px;
-    background-color: rgb(169, 8, 94);
-    transform: rotate(-45deg) translate(15px, 4px);
-    left: 0;
-    top: 0;
-  }*/
-
-
-
 
 .section-2 {
     /*stjärnbakgrund sid 2*/
