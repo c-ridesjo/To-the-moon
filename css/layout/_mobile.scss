@@ -87,6 +87,16 @@ footer {
     -webkit-transform: rotate(45deg);
 }
 
+.arrow-move span {
+    position: relative;
+    left: 0;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .arrow-move:hover span {
+    left: 15px;
+  }
+
 /*.arrow_right {
     display: block;
     margin: 30px auto;

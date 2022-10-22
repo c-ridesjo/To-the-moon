@@ -41,7 +41,7 @@ input {
 }
 
 input:hover+.menu button span:nth-child(2) {
-    left: -5px;
+    left: 5px;
 }
 
 input:checked+.menu button span {
