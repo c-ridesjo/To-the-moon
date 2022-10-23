@@ -30,7 +30,7 @@ a:link {
     color: rgb(181, 9, 141);
     text-decoration: none; 
 }  
-        
+       
 a:visited { 
     text-decoration: none;
 }
@@ -71,13 +71,15 @@ footer {
     color: #ea0c98;
     background-color: rgb(39, 39, 92);
     text-transform: uppercase;
+    font-weight: bold;
     padding: 5px 10px 5px 10px;
     font-size: 12px;  
     display: flex;
     position: absolute;
     bottom: 8px;
     right: 700px;
-    border: 3px solid black;
+    text-shadow: none;
+    border: 2px solid black;
     border-radius: 4px;
 }
 
