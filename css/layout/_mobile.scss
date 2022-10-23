@@ -63,6 +63,22 @@ footer {
     background-color: rgb(39, 39, 92);
     padding-top: 5px;
     padding-bottom: 5px;
+    position: relative;
+}
+
+.cookie_accept {  
+    border: black;
+    color: #ea0c98;
+    background-color: rgb(39, 39, 92);
+    text-transform: uppercase;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;  
+    display: flex;
+    position: absolute;
+    bottom: 8px;
+    right: 700px;
+    border: 3px solid black;
+    border-radius: 4px;
 }
 
 .astronaut {
