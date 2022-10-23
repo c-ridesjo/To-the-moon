@@ -26,18 +26,18 @@ h3 {
 }
 
 a:link {
-/*länkar*/
+    /*länkar*/
     color: rgb(181, 9, 141);
-    text-decoration: none; 
-}  
-       
-a:visited { 
     text-decoration: none;
 }
-        
-a:active { 
-    text-decoration: none; 
- }
+
+a:visited {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
 
 aside {
     /* Rutan To the moon*/
@@ -66,14 +66,14 @@ footer {
     position: relative;
 }
 
-.cookie_accept {  
+.cookie_accept {
     border: black;
     color: #ea0c98;
     background-color: rgb(39, 39, 92);
     text-transform: uppercase;
     font-weight: bold;
     padding: 5px 10px 5px 10px;
-    font-size: 12px;  
+    font-size: 12px;
     display: flex;
     position: absolute;
     bottom: 8px;
@@ -114,11 +114,11 @@ footer {
     position: relative;
     left: 0;
     transition: left 0.4s ease-in-out;
-  }
-  
-  .arrow-move:hover span {
+}
+
+.arrow-move:hover span {
     left: 15px;
-  }
+}
 
 .section-2 {
     /*stjärnbakgrund sid 2*/
@@ -140,7 +140,7 @@ footer {
     font-style: italic;
     font-size: 20px;
     position: center;
-    padding-bottom: 30px; 
+    padding-bottom: 30px;
 }
 
 blockquote {
@@ -222,4 +222,3 @@ blockquote::after {
     /*foto som inte visas i mobilvyn*/
     display: none;
 }
-
