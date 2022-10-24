@@ -1,6 +1,11 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {  
+    
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
-    /* desktop-läge*/
     .full-page {
         display: flex;
         gap: 100px;
