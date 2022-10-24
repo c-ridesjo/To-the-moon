@@ -17,8 +17,8 @@ button {
 
 button span {
     display: block;
-    width: 25px;
-    height: 3px;
+    width: 35px;
+    height: 5px;
     background-color: black;
     margin-bottom: 6px;
     border-radius: 4px;
@@ -72,7 +72,7 @@ nav {
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 3;
-    //display: none; //dold 
+    display: none; //dold 
 }
 
 input:checked+.menu nav {
@@ -90,7 +90,7 @@ ul {
     justify-content: space-evenly;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 42px;   
+    font-size: 46px;   
     text-shadow: 0px 8px 15px rgb(75, 75, 75);    
 }
 

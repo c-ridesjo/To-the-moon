@@ -58,8 +58,8 @@ aside {
 footer {
     /*sidfot*/
     font-size: 12px;
-    color: rgb(216, 29, 135);
-    text-shadow: 2px 2px 5px rgb(237, 144, 201);
+    color:rgb(222, 58, 151);
+    text-shadow: 2px 2px 5px rgb(233, 118, 189);
     background-color: rgb(39, 39, 92);
     padding-top: 5px;
     padding-bottom: 5px;
@@ -67,16 +67,16 @@ footer {
 }
 
 .cookie_accept {
-    color: rgb(216, 29, 135);
+    color: rgb(222, 58, 151);
     background-color: rgb(39, 39, 92);
     text-transform: uppercase;
     font-weight: bold;
     padding: 5px 10px 5px 10px;
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     position: absolute;
-    bottom: 8px;
-    left: 600px;
+    bottom: 15px;
+    left: 430px;
     text-shadow: none;
     border: 2px solid black;
     border-radius: 4px;
