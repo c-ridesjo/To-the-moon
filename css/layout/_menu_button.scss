@@ -63,7 +63,7 @@ input:checked+.menu button span:nth-child(3) {
 
 button span:nth-child(2) {
     margin-left: 0;
-    transition: all 0, 4s ease-in-out;
+    transition: all 0,4s ease-in-out;
 }
 
 nav {
@@ -72,13 +72,13 @@ nav {
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 3;
-    display: none; //dold 
+    //display: none; //dold 
 }
 
 input:checked+.menu nav {
     opacity: 1;
     visibility: visible;
-}
+}    
 
 ul {
     margin: 0;
@@ -90,15 +90,17 @@ ul {
     justify-content: space-evenly;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 42px;
-    color: black;
-    text-transform: uppercase;
-    text-shadow: 0px 8px 15px rgb(75, 75, 75);
-    font-weight: bolder;
+    font-size: 42px;   
+    text-shadow: 0px 8px 15px rgb(75, 75, 75);    
 }
 
-nav li a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 4;
-    text-decoration-color: linear-gradient(rgb(203, 18, 132));    
+nav li a:link {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bolder;    
+}
+
+nav li a:hover {        
+    text-decoration: underline;  
+    text-decoration-color: rgb(222, 44, 154), rgb(224, 122, 175);    
 }

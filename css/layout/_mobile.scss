@@ -26,8 +26,9 @@ h3 {
 
 a:link {
     /*länkar*/
-    color: rgb(181, 9, 141);
+    color: rgb(216, 29, 135);
     text-decoration: none;
+    text-transform: none;
 }
 
 a:visited {
@@ -137,7 +138,7 @@ footer {
     display: inline-table;
     font-style: italic;
     font-size: 20px;
-    position: center;
+    text-align: left;
     padding-bottom: 30px;
 }
 
@@ -211,7 +212,7 @@ blockquote::after {
     position: relative;
     z-index: 1;
     color: black;
-    text-align: absolute;
+    text-align:left;
     color: white;
     font-size: 12px;
 }
